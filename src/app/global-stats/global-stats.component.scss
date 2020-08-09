@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #e4e3e3;
+}
+
+.container {
+  margin-bottom: 50px;
+  display: grid;
+  grid-gap: 1rem;  
+  background-color: darken($color: #2F4858, $amount: 5);
+  padding: 10px;
+  border-radius: 30px;
+
+  .stat-box {
+    text-align: center;
+    font-size: 2rem;
+
+    .stat-number {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.b1 {
+  color: #e4e3e3;
+}
+
+.b2 {
+  color: #d54062;
+}
+
+.b3 {
+  color: #d3de32;
+}

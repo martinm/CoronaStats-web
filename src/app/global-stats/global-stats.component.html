@@ -1,1 +1,38 @@
-<p *ngIf="globalStats">Total Cases {{globalStats.cases | number}}</p>
+<!-- <ng-container *ngIf="globalStats; else elseTemplate"> -->
+    <h1>Global</h1>
+    <section class="container s1">
+        <div class="stat-box b1">
+            <p class="stat-number">{{globalStats.todayCases | number}}</p>
+            <p class="stat-name">cases</p>
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number">{{globalStats.todayDeaths | number}}</p>
+            <p class="stat-name">deaths</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number">{{globalStats.todayRecovered | number}}</p>
+            <p class="stat-name">recovered</p>
+        </div>
+    </section>
+
+    <h1>Total</h1>
+    <section class="container s2">
+        <div class="stat-box b1">
+            <p class="stat-number">{{1129283 | number}}</p>
+            <p class="stat-name">cases</p>        
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number">{{18232 | number}}</p>
+            <p class="stat-name">deaths</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number">{{192283 | number}}</p>
+            <p class="stat-name">recovered</p>
+        </div>
+    </section>
+<!-- </ng-container> -->
+
+<!-- <ng-template #elseTemplate>
+    <h1>loading...</h1>    
+</ng-template> -->
+
