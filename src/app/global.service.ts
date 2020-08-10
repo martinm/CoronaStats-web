@@ -18,7 +18,7 @@ export class GlobalService {
   getStats(): Observable<Global> {
     return this.http.get<Global>(this.globalStatsUrl).pipe(
       tap(_ => console.log('data fetched')),
-      catchError(this.errorHandler<Global>('getStats'))
+      catchError(this.errorHandler<Global>('global.getStats'))
     );
   }
 
