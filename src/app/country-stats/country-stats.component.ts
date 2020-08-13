@@ -10,6 +10,7 @@ import { CountryService } from '../country.service';
 })
 export class CountryStatsComponent implements OnInit {
   countries: Country[];
+  switch = true;
 
   constructor(
     private countryService: CountryService
@@ -24,4 +25,24 @@ export class CountryStatsComponent implements OnInit {
       stats => this.countries = stats)
   }
 
+  testing(prop): void {
+    if (this.switch) {
+      this.countries.sort((a, b) => (a[prop] > b[prop]) ? 1 : -1)
+    } else {
+      this.countries.sort((a, b) => (a[prop] < b[prop]) ? 1 : -1)
+    }
+    this.switch = !this.switch
+  }
+
+  compare( a, b ) {
+    if ( a.cases > b.cases ){
+      return -1;
+    }
+    if ( a.cases < b.cases ){
+      return 1;
+    }
+    return 0;
+  }
+
+  
 }
