@@ -1,18 +1,18 @@
 <!-- <ng-container *ngIf="globalStats; else elseTemplate"> -->
-    <!-- <p>Updated as of: {{globalStats.updated | date: 'medium'}}</p> -->
+    <!-- <p>Updated as: {{globalStats.updated | date: 'medium'}}</p> -->
     <h1>Today</h1>
     <section class="container s1">
         <div class="stat-box b1">
             <p class="stat-number">{{globalStats.todayCases | number}}</p>
-            <p class="stat-name">cases</p>
+            <p class="stat-name">new cases</p>
         </div>
         <div class="stat-box b2">
             <p class="stat-number">{{globalStats.todayDeaths | number}}</p>
-            <p class="stat-name">deaths</p>
+            <p class="stat-name">new deaths</p>
         </div>
         <div class="stat-box b3">
             <p class="stat-number">{{globalStats.todayRecovered | number}}</p>
-            <p class="stat-name">recovered</p>
+            <p class="stat-name">new recovered</p>
         </div>
     </section>
 

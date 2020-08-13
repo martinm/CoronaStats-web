@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GlobalStatsComponent } from './global-stats/global-stats.component';
 import { CountryStatsComponent } from './country-stats/country-stats.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobalStatsComponent,
-    CountryStatsComponent
+    CountryStatsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

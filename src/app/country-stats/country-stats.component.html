@@ -1,3 +1,62 @@
+<section class="container s1">
+    <div class="first-box b1">
+        <p class="stat-number">Country</p>
+    </div>
+    <div class="stat-box b1">
+        <p class="stat-number">Today Cases</p>
+    </div>
+    <div class="stat-box b2">
+        <p class="stat-number">Today Recovered</p>
+    </div>
+    <div class="stat-box b3">
+        <p class="stat-number">Today Deaths</p>
+    </div>
+    <div class="stat-box b1">
+        <p class="stat-number">Active Cases</p>
+    </div>
+    <div class="stat-box b4">
+        <p class="stat-number">Critical</p>
+    </div>
+    <div class="stat-box b1">
+        <p class="stat-number">Total Cases</p>
+    </div>
+    <div class="stat-box b2">
+        <p class="stat-number">Total Recovered</p>
+    </div>
+    <div class="stat-box b3">
+        <p class="stat-number">Total Deaths</p>
+    </div>
+</section>
+
 <div *ngFor="let country of countries">
-    <p>{{country.country}}</p>
+    <section class="container s2" routerLink="/">
+        <div class="first-box b1">
+            <p class="stat-number">{{country.country}}</p>
+        </div>
+        <div class="stat-box b1">
+            <p class="stat-number">{{country.todayCases | number}}</p>
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number">{{country.todayRecovered | number}}</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number">{{country.todayDeaths | number}}</p>
+        </div>
+        <div class="stat-box b1">
+            <p class="stat-number">{{country.active | number}}</p>
+        </div>
+        <div class="stat-box b4">
+            <p class="stat-number">{{country.critical | number}}</p>
+        </div>
+        <div class="stat-box b1">
+            <p class="stat-number">{{country.cases | number}}</p>
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number">{{country.recovered | number}}</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number">{{country.deaths | number}}</p>
+        </div>
+    </section>
 </div>
+

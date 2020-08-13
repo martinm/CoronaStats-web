@@ -16,7 +16,7 @@ export class GlobalStatsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.getStats();
+    this.getStats();
   }
 
   getStats(): void {

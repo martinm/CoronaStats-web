@@ -16,7 +16,7 @@ export class CountryStatsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.getStats()
+    this.getStats()
   }
 
   getStats(): void {
