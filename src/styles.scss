@@ -1,4 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #2F4858;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: #e4e3e3;
+  }
+  
+  .container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 1rem;  
+    background-color: darken($color: #2F4858, $amount: 5);
+    padding: 10px;
+    border-radius: 30px;
+  
+    .stat-box {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: darken($color: #2F4858, $amount: 10);
+      cursor: pointer;
+    }
+  }
+
+  .first-box {
+      align-self: center;
+  }
+  
+  .b1 {
+    color: #e4e3e3;
+  }
+  
+  .b2 {
+    color: #d3de32;
+  }
+  
+  .b3 {
+    color: #d54062;
+  }
+
+  .b4 {
+    color: #fc9c43;
+  }
