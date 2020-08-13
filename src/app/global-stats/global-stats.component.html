@@ -29,28 +29,28 @@
 
     <section class="container s2">
         <div class="stat-box b1">
-            <p class="stat-number">{{globalStats.todayCases | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Today Cases</span> {{globalStats.todayCases | number}}</p>
         </div>
         <div class="stat-box b2">
-            <p class="stat-number">{{globalStats.todayRecovered | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Today Recovered</span> {{globalStats.todayRecovered | number}}</p>
         </div>
         <div class="stat-box b3">
-            <p class="stat-number">{{globalStats.todayDeaths | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{globalStats.todayDeaths | number}}</p>
         </div>
         <div class="stat-box b1">
-            <p class="stat-number">{{globalStats.active | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Active Cases</span> {{globalStats.active | number}}</p>
         </div>
         <div class="stat-box b4">
-            <p class="stat-number">{{globalStats.critical | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Critical</span> {{globalStats.critical | number}}</p>
         </div>
         <div class="stat-box b1">
-            <p class="stat-number">{{globalStats.cases | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Total Cases</span> {{globalStats.cases | number}}</p>
         </div>
         <div class="stat-box b2">
-            <p class="stat-number">{{globalStats.recovered | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Total Recovered</span> {{globalStats.recovered | number}}</p>
         </div>
         <div class="stat-box b3">
-            <p class="stat-number">{{globalStats.deaths | number}}</p>
+            <p class="stat-number"><span class="ssTitle">Total Deaths</span> {{globalStats.deaths | number}}</p>
         </div>
     </section>
 <!-- </ng-container> -->
