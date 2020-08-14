@@ -13,6 +13,18 @@
 
   .s1 {
     display: grid;
+
+    p {
+      padding: 0.5rem;
+    }
+
+    p:hover {
+      cursor: pointer;
+    }
+
+    .first-box:hover, .stat-box:hover {
+      background-color: darken($color: #2F4858, $amount: 10);
+    }
   }
 
   .ssTitle {

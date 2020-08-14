@@ -35,6 +35,11 @@ body {
 
   .s1 {
     border-radius: 0px;
+
+    &:hover {
+      background-color: darken($color: #2F4858, $amount: 5);
+      cursor: unset;
+    }
   }
 
   .first-box {
