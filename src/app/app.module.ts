@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { GlobalStatsComponent } from './global-stats/global-stats.component';
 import { CountryStatsComponent } from './country-stats/country-stats.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CountryComponent } from './country/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GlobalStatsComponent,
     CountryStatsComponent,
-    NavbarComponent
+    NavbarComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,
