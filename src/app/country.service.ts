@@ -22,6 +22,15 @@ export class CountryService {
     );
   }
 
+  getCountry(country: string): Observable<Country> {
+    const url = `${this.countryStatsUrl}/${country}`;
+    
+    return this.http.get<Country>(url).pipe(
+      tap(_ => console.log(`${country} data fetched`)),
+      catchError(this.errorHandler<Country>('country.getCountry'))
+    );
+  }
+
   private errorHandler<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(`${operation} failed: ${error.message}`);

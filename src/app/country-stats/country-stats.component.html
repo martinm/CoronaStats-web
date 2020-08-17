@@ -29,7 +29,7 @@
 </div>
 
 <div *ngFor="let country of countries">
-    <section class="container s2" routerLink="/">
+    <section class="container s2" routerLink="/country/{{country.country}}">
         <div class="first-box b1">
             <p class="stat-number">{{country.country}}</p>
         </div>
