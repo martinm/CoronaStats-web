@@ -26,11 +26,6 @@ body {
       text-align: center;
       font-size: 1rem;
     }
-
-    &:hover {
-      background-color: darken($color: #2F4858, $amount: 10);
-      cursor: pointer;
-    }
   }
 
   .s1 {
@@ -60,4 +55,12 @@ body {
 
   .b4 {
     color: #fc9c43;
+  }
+
+  .b5 {
+    color: #FFE66D;
+  }
+
+  .b6 {
+    color: #E5989B;
   }

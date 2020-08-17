@@ -1,1 +1,65 @@
-<p *ngIf="country">{{country.country}}</p>
+<div *ngIf="country" class="country">
+    <img src="{{country.countryInfo.flag}}" alt="flag of {{country.country}}">
+    <p class="country-title">{{country.country}}</p>
+
+    <section class="container s2">
+        <div class="stat-box b1">
+            <p class="stat-number"><span class="ssTitle">Today Cases</span> {{country.todayCases | number}}</p>
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number"><span class="ssTitle">Today Recovered</span> {{country.todayRecovered | number}}</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{country.todayDeaths | number}}</p>
+        </div>
+    </section>
+
+    <section class="container s2">
+        <div class="stat-box b1">
+            <p class="stat-number"><span class="ssTitle">Total Cases</span> {{country.cases | number}}</p>
+        </div>
+        <div class="stat-box b2">
+            <p class="stat-number"><span class="ssTitle">Total Recovered</span> {{country.recovered | number}}</p>
+        </div>
+        <div class="stat-box b3">
+            <p class="stat-number"><span class="ssTitle">Total Deaths</span> {{country.deaths | number}}</p>
+        </div>
+    </section>
+
+    <section class="container s2">
+        <div class="stat-box b4">
+            <p class="stat-number"><span class="ssTitle">Critical</span> {{country.critical | number}}</p>
+        </div>
+        <div class="stat-box b4">
+            <p class="stat-number"><span class="ssTitle">Critical - Population</span> {{(country.critical / country.population) * 100 | number: '1.1-2'}}%</p>
+        </div>
+        <div class="stat-box b4">
+            <p class="stat-number"><span class="ssTitle">Critical - Per Million</span> {{country.criticalPerOneMillion | number}}</p>
+        </div>
+    </section>
+
+    <section class="container s2">
+        <div class="stat-box b5">
+            <p class="stat-number"><span class="ssTitle">Active Cases</span> {{country.active | number}}</p>
+        </div>
+        <div class="stat-box b5">
+            <p class="stat-number"><span class="ssTitle">Active Cases - Population</span> {{(country.cases / country.population) * 100 | number: '1.1-2'}}%</p>
+        </div>
+        <div class="stat-box b5">
+            <p class="stat-number"><span class="ssTitle">Active Cases - Per Million</span> {{country.activePerOneMillion | number}}</p>
+        </div>
+    </section>
+
+    <section class="container s2">
+        <div class="stat-box b6">
+            <p class="stat-number"><span class="ssTitle">Tested</span> {{country.tests | number}}</p>
+        </div>
+        <div class="stat-box b6">
+            <p class="stat-number"><span class="ssTitle">Tested - Population</span> {{(country.cases / country.population) * 100 | number: '1.1-2'}}%</p>
+        </div>
+        <div class="stat-box b6">
+            <p class="stat-number"><span class="ssTitle">Tested - Per Million</span> {{country.testsPerOneMillion | number}}</p>
+        </div>
+    </section>
+    <p class="datestamp">updated: {{country.updated | date:'HH:mm dd/MM/yyyy' }}</p>
+</div>
