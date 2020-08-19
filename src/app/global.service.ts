@@ -9,7 +9,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class GlobalService {
-  private globalStatsUrl = 'https://corona.lmao.ninja/v2/all';
+  private globalStatsUrl = 'https://disease.sh/v3/covid-19/all';
 
   constructor(
     private http: HttpClient

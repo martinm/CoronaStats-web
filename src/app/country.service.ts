@@ -9,7 +9,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class CountryService {
-  private countryStatsUrl = 'https://corona.lmao.ninja/v2/countries';
+  private countryStatsUrl = 'https://disease.sh/v3/covid-19/countries';
 
   constructor(
     private http: HttpClient

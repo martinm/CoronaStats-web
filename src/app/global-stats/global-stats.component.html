@@ -1,5 +1,4 @@
-<!-- <ng-container *ngIf="globalStats; else elseTemplate"> -->
-    <!-- <p>Updated as: {{globalStats.updated | date: 'medium'}}</p> -->
+<ng-container *ngIf="globalStats; else elseTemplate">
     <section class="container s1">
         <div class="stat-box b1">
             <p class="stat-number">Today Cases</p>
@@ -53,9 +52,9 @@
             <p class="stat-number"><span class="ssTitle">Total Deaths</span> {{globalStats.deaths | number}}</p>
         </div>
     </section>
-<!-- </ng-container> -->
+</ng-container>
 
-<!-- <ng-template #elseTemplate>
+<ng-template #elseTemplate>
     <h1>loading...</h1>    
-</ng-template> -->
+</ng-template>
 
