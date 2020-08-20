@@ -30,6 +30,38 @@
         </div>
     </div>
 
+    <div *ngFor="let country of searchResults">
+        <section class="container s2" routerLink="/country/{{country.country}}">
+            <div class="first-box b1">
+                <p class="stat-number">{{country.country}}</p>
+            </div>
+            <div class="stat-box b1">
+                <p class="stat-number"><span class="ssTitle">Today Cases</span> {{country.todayCases | number}}</p>
+            </div>
+            <div class="stat-box b2">
+                <p class="stat-number"><span class="ssTitle">Today Recovered</span> {{country.todayRecovered | number}}</p>
+            </div>
+            <div class="stat-box b3">
+                <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{country.todayDeaths | number}}</p>
+            </div>
+            <div class="stat-box b1">
+                <p class="stat-number"><span class="ssTitle">Active Cases</span> {{country.active | number}}</p>
+            </div>
+            <div class="stat-box b4">
+                <p class="stat-number"><span class="ssTitle">Critical</span> {{country.critical | number}}</p>
+            </div>
+            <div class="stat-box b1">
+                <p class="stat-number"><span class="ssTitle">Total Cases</span> {{country.cases | number}}</p>
+            </div>
+            <div class="stat-box b2">
+                <p class="stat-number"><span class="ssTitle">Today Recovered</span> {{country.recovered | number}}</p>
+            </div>
+            <div class="stat-box b3">
+                <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{country.deaths | number}}</p>
+            </div>
+        </section>
+    </div>
+
     <div *ngFor="let country of countries">
         <section class="container s2" routerLink="/country/{{country.country}}">
             <div class="first-box b1">

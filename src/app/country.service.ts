@@ -12,7 +12,7 @@ export class CountryService {
   private countryStatsUrl = 'https://disease.sh/v3/covid-19/countries';
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
   ) { }
 
   getStats(): Observable<Country[]> {
