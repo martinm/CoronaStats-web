@@ -22,7 +22,7 @@ export class SearchComponent implements OnInit {
   }
 
   search(word: string) {
-    this.searchService.search(word, this.countries);
+    this.searchService.search(word.charAt(0).toUpperCase()+word.substr(1).toLocaleLowerCase(), this.countries);
   }
 
   getStats(): void {
