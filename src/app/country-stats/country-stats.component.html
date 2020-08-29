@@ -28,6 +28,9 @@
         <div class="stat-box b3">
             <p class="stat-number" (click)="sort('deaths')">Total Deaths<span class="material-icons b3">swap_vert</span></p>
         </div>
+        <div class="stat-box b1">
+
+        </div>
     </div>
 
     <div *ngFor="let country of searchResults">
@@ -58,6 +61,9 @@
             </div>
             <div class="stat-box b3">
                 <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{country.deaths | number}}</p>
+            </div>
+            <div class="stat-box b1">
+                <p class="stat-number"><span class="material-icons b1">more_horiz</span></p>
             </div>
         </section>
     </div>
@@ -90,6 +96,9 @@
             </div>
             <div class="stat-box b3">
                 <p class="stat-number"><span class="ssTitle">Today Deaths</span> {{country.deaths | number}}</p>
+            </div>
+            <div class="stat-box b1">
+                <p class="stat-number"><span class="material-icons b1">more_horiz</span></p>
             </div>
         </section>
     </div>
