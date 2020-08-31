@@ -1,0 +1,46 @@
+.s1 {
+  display: grid;
+}
+
+img {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  width: 150px;
+}
+
+.country-title {
+  text-align: center;
+  margin: 1rem;
+  color: white;
+}
+
+.datestamp {
+  text-align: center;
+  color: #141f26;
+}
+
+.ssTitle {
+  display: grid;
+}
+
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s1 {
+    display: grid;
+  }
+}
+.back-btn {
+  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #263a47;
+  border-radius: 30px;
+  color: white;
+}
+.back-btn:hover {
+  background-color: #1d2d37;
+  cursor: pointer;
+}

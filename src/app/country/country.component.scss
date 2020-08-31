@@ -32,3 +32,17 @@ display: grid;
         display: grid;
     }
 }
+
+.back-btn {
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: darken($color: #2F4858, $amount: 5);
+    border-radius: 30px;
+    color: white;
+
+    &:hover {
+        background-color: darken($color: #2F4858, $amount: 10);
+        cursor: pointer;
+    }
+}
