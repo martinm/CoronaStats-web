@@ -1,5 +1,5 @@
 # CoronaStatsWeb
-Simple app with minimal number of clicks and typing, easy access to COVID-19 data. User can imiddletely see global statistics, search for specific country or sort list of all countries.
+Simple app with a minimal number of clicks and typing, easy access to COVID-19 data. Users can immediately see global statistics, search for a specific country, or sort a list of all countries.
 
 ## Demo
 [Link](https://coronastats-bc615.web.app)
