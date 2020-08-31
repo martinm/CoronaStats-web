@@ -1,4 +1,3 @@
-
 .s1 {
   display: none;
 }
@@ -11,11 +10,9 @@
   display: grid;
 }
 
-.container-search.s2 {
-  &:hover {
-    background-color: darken($color: #2F4858, $amount: 10);
-    cursor: pointer;
-  }
+.container-search.s2:hover {
+  background-color: #1d2d37;
+  cursor: pointer;
 }
 
 @media (min-width: 720px) {
@@ -36,4 +33,3 @@
     display: none;
   }
 }
-

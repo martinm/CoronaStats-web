@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #2F4858;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #e4e3e3;
+}
+
+.container {
+  margin-bottom: 20px;
+  display: grid;
+  grid-gap: 1rem;
+  background-color: #263a47;
+  padding: 10px;
+  border-radius: 30px;
+}
+.container .stat-box {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.s1 {
+  border-radius: 0px;
+}
+.s1:hover {
+  background-color: #263a47;
+  cursor: unset;
+}
+
+.first-box {
+  align-self: center;
+}
+
+.b1 {
+  color: #e4e3e3;
+}
+
+.b2 {
+  color: #d3de32;
+}
+
+.b3 {
+  color: #d54062;
+}
+
+.b4 {
+  color: #fc9c43;
+}
+
+.b5 {
+  color: #FFE66D;
+}
+
+.b6 {
+  color: #E5989B;
+}

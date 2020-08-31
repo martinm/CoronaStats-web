@@ -22,12 +22,7 @@ export class CountryStatsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getStats();
-    this.getNumber();
-    // this.search();
-  }
-
-  getNumber(): void {
-    this.searchService.searchResults.subscribe(result => this.searchResults = result);
+    this.search();
   }
 
   getStats(): void {

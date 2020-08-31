@@ -1,0 +1,42 @@
+.s1 {
+  display: none;
+}
+
+.ssTitle {
+  display: grid;
+}
+
+.container-search {
+  background-color: #141f26;
+}
+
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .container:hover {
+    background-color: #1d2d37;
+    cursor: pointer;
+  }
+
+  .s1 {
+    display: grid;
+  }
+  .s1 p {
+    padding: 0.5rem;
+  }
+  .s1 p:hover {
+    cursor: pointer;
+  }
+  .s1 .first-box:hover, .s1 .stat-box:hover {
+    background-color: #1d2d37;
+  }
+
+  .ssTitle {
+    display: none;
+  }
+}
+.material-icons {
+  font-size: 1rem;
+  vertical-align: middle;
+}
